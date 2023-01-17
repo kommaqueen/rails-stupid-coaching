@@ -1,0 +1,30 @@
+<div class="wrapper">
+
+  <h1 class="info-blue">Stupid Coaching</h1>
+
+  <figure id="your_question" class="note note-primary p-4 grey-left-border">
+    <blockquote class="blockquote">
+      <p class="pb-2">
+        <%= @question %>
+      </p>
+    </blockquote>
+    <figcaption class="blockquote-footer mb-0">
+      You
+    </figcaption>
+  </figure>
+
+  <figure id="coach-answer" class="note note-secondary p-4 grey-left-border">
+    <blockquote class="blockquote">
+      <p class="pb-2">
+        <%= @answer %>
+      </p>
+    </blockquote>
+    <figcaption class="blockquote-footer mb-0">
+      Your stupid coach
+    </figcaption>
+  </figure>
+
+  <div class="link">
+    <button class="btn btn-info btn-md"><%= link_to("Ask a new question", ask_path)%></button>
+  </div>
+</div>
